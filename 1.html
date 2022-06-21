@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>텍스트를 묶어주는</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1><a href="index.html">텍스트를 묶어주는 태그</a></h1>
+      <dt><strong>&lt;hn&gt;태그 - 제목표시</strong></dt>
+        <dd>각 웹 콘텐츠 영역에서 제목을 표시할 때 사용</dd>
+        <dd>h1&gt;h2&gt;h3&gt;h4&gt;h5&gt;h6&gt; 가장 왼쪽이 글자가 크고 중요도가 높다</dd> 
+        <dd>(글자크기나 굵기 등의 비주얼 요소는 css로 변경이 가능하기 때문에 고려하지 않는다.)</dd>
+        <br>
+      <dt><strong>&lt;P&gt;태그 - 텍스트 단락</strong></dt>
+        <dd>입력한 내용의 앞뒤로 빈 줄이 생기면서 텍스트 단락이 만들어짐.</dd>
+        <dd> (정해진 여백만큼만 벌어져서 시각적 자유도가 낮다. CSSDML margin속성을 사용한다.) </dd>
+        <br>
+          <hr>
+          <strong>※제목&lt;hn&gt;태그와 일반 텍스트&lt;p&gt;태그와 다른 점</strong><br>
+          p태그로 글자를 크게하는 것은 안되나?<br>
+          웹브라우저 상에서 보여지는 모습은 똑같을 지라도 웹브라우저가 &lt;hn&gt;=제목 &lt;p&gt;=일반텍스트로 인식하기 때문에 시각장애인을 위한 낭독프로그램이나 스마트기기에서 제목과 일반텍스트가 구분됨.<br>
+          <em>목적에 맞게 정확한 태그를 사용하는 것이 중요하다.</em>
+          <hr>
+      <dt><strong>&lt;br&gt;태그 - 줄 바꾸기</strong> (문장이 너무 길어졌을 때)</dt>
+        <dd>여는 태그 필수 &#44; <em>닫는 태그는 없다</em></dd>
+        <dd>줄을 바꿀 위치에 &lt;br&gt;태그를 사용. </dd>
+        <br>
+      <dt><strong>&lt;blockquote&gt;태그 - 인용문 넣기</strong> (텍스트가 긴 인용문)</dt>
+        <dd>다른 텍스트보다 단락이 들여써짐</dd>
+        <dd>인용문의 출처는 cite요소로 제공 &lt;block cite="인용사이트"&gt; &lt;;blockquote cite="인용사이트"&gt;&lt;p&gt;인용내용&lt;&#47;p&gt;&lt;&#47;blockquote&gt;</dd>
+        <br>
+        <dt><strong>&lt;hr&gt;태그 - 분위기 전환</strong></dt>
+        <dd>주제가 바뀔 때 분위기 전환. 수평줄이 생긴다.(css에서 없앨 수 있다.)</dd>
+        <br>
+        <dt><strong>&lt;pre&gt;태그 - 입력한 그대로 표시</strong></dt>
+        <dd>소스에 표시한 공백이 그래도 표시됨</dd>
+        <dd>프로그램 소스를 표시할 때 유용함</dd>
+        <dd>html에서는 스페이스바로 공백을 10칸             주더라고 공백이 1칸만 나타난다. <pre>하지만 &lt;pre&gt;태그를 사용하면 공백이                       그대로 표시된다.</pre> </dd>
+        <br>
+</body>
+</html>
