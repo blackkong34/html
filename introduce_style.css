@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font: inherit;
+}
+:root {
+    --navy: #000046;
+
+}
+/* design*/
+.logo {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 2em;
+    color: --var(navy);
+    transition: all .4s;
+}
+.logo:hover {
+    color: aliceblue;
+}
+
+.menu * {
+    display: inline;
+}
+.menu {
+    align-items: center;
+    text-align: center;
+    top: 120px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    color: #FFD74b;
+    font-size: 0.7em;
+    padding: 10px;
+}
+
+li {
+    margin: 1em;
+    
+}
+.menu ul li a {
+    text-decoration: none;
+    color : --var(navy);
+}
+body {
+    background-color: #bfbfbf;;
+}
+:root {
+    font-family: 'Noto Serif KR', serif;
+    line-height: 1.5;
+}
+.container {
+    height: auto;
+    min-height: 100%;
+    background-color: rgb(71, 71, 75);
+    color: white;
+    max-width : 960px;
+    margin: 10px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+ul {
+    list-style-type: none;
+}
+.cover {
+    width: 70%;
+    float: left;
+}
+.contents {
+    width: 30%;
+    float: left;
+    text-align: center;
+}
+.cover-photo {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+.contents h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+
+}
+.contents span {
+    font-size: 0.5em;
+
+}
+.contents p {
+    font-size: 0.3em;
+}
+
+.link * {
+    display: inline;
+}
+.link {
+    background-color: rgba(71, 69, 69, 0.5) ;
+    align-content:center;
+    text-align: center;
+    position: relative;
+    transform: translateY(-100%);
+    top: 200px;
+    bottom: 0;
+    height: 20px;
+    color: white;
+    font-size: 0.7em;
+    padding: 0;
+}
+.link a {
+    color: aliceblue;
+}
+@media ( max-width : 720px ) {
+    .container{
+        margin: 0;
+        position: relative;
+    }
+
+    header
+    footer
+    .container,
+    .cover
+    .contents {
+        display: block;
+        width: auto;
+    }
+    .contents {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: opacity(0.1);
+        max-width: 400px;
+        margin: 30px;
+        padding: 20px;
+        text-align: right; 
+    }
+}
+
